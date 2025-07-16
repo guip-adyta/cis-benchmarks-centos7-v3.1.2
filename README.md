@@ -1,5 +1,6 @@
 # CIS Benchmarks Audit
 <p>
+  <img alt="OS" src="https://img.shields.io/badge/CentOS-7-blue.svg">
   <a href="https://github.com/finalduty/cis-benchmarks-audit/tags">
     <img alt="Latest version" src="https://img.shields.io/github/v/tag/finalduty/cis-benchmarks-audit?include_prereleases&label=latest&logo=python">
   </a>
@@ -27,7 +28,7 @@ This repo provides an unofficial, standalone, zero-install, zero-dependency, Pyt
 ### How do I use this?
 #### Download:
 
-    curl -LO https://raw.githubusercontent.com/finalduty/cis_benchmarks_audit/main/cis_audit.py && chmod 750 cis_audit.py
+    curl -LO https://raw.githubusercontent.com/guip-adyta/cis_benchmarks_centos7_v3.1.2/main/cis_audit.py && chmod 750 cis_audit.py
 
 #### Run
 ```

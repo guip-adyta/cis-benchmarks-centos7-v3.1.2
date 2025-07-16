@@ -36,10 +36,6 @@ from types import (
 )
 from typing import Generator
 
-from tests.integration import (
-    shellexec,  # https://docs.python.org/3/library/typing.html#typing.Generator
-)
-
 
 ### Classes ###
 class CISAudit:
@@ -1878,7 +1874,7 @@ class CISAudit:
         if r.stdout[0] != '':
             state += 1
 
-        gid = shellexec("awk -F: '/^shadow:/ {print $3}' /etc/group").stdout[0]
+        gid = self._shellexec("awk -F: '/^shadow:/ {print $3}' /etc/group").stdout[0]
 
         cmd = f"awk -F: '($4 == \"{gid}\") {{print $1}}' /etc/passwd"
         r = self._shellexec(cmd)
