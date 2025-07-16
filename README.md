@@ -28,7 +28,7 @@ This repo provides an unofficial, standalone, zero-install, zero-dependency, Pyt
 ### How do I use this?
 #### Download:
 
-    curl -LO https://raw.githubusercontent.com/guip-adyta/cis_benchmarks_centos7_v3.1.2/main/cis_audit.py && chmod 750 cis_audit.py
+    curl -LO https://raw.githubusercontent.com/guip-adyta/cis-benchmarks-centos7-v3.1.2/main/cis_audit.py && chmod 750 cis_audit.py
 
 #### Run
 ```
