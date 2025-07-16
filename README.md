@@ -90,6 +90,12 @@ Examples:
 
 ```
 
+### Results
+- `Pass`: Control passed
+- `Fail`: Control failed
+- `Not Implemented`: Automated test for control not implemented
+- `Manual`: Control must be verified manually
+
 ### Example Results
 ```
 # ./cis-audit.sh --include 5.2
