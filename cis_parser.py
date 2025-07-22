@@ -6,8 +6,7 @@ CIS Metrics Extractor
 import re
 import sys
 import json
-from typing import Dict, List, Tuple, Optional
-from dataclasses import dataclass
+from typing import Dict, List, Optional
 from collections import defaultdict, Counter
 from argparse import (
     ArgumentParser,
@@ -16,15 +15,17 @@ from argparse import (
 
 labels = defaultdict(lambda: {'total': 0, 'pass': 0, 'fail': 0, 'skipped': 0, 'manual': 0, 'not implemented': 0, 'error': 0})
 
-@dataclass
 class AuditItem:
     """Represents a single audit item."""
-    id: str
-    description: str
-    level: Optional[int]
-    result: Optional[str]
-    duration: Optional[str]
-    duration_ms: Optional[float]
+    def __init__(self, id: str, description: str, level: Optional[int], 
+                 result: Optional[str], duration: Optional[str], 
+                 duration_ms: Optional[float]):
+        self.id = id
+        self.description = description
+        self.level = level
+        self.result = result
+        self.duration = duration
+        self.duration_ms = duration_ms
 
 
 class AuditMetricsExtractor:
