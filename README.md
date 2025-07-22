@@ -30,7 +30,7 @@ This repo provides an unofficial, standalone, zero-install, zero-dependency, Pyt
 
     curl -LO https://raw.githubusercontent.com/guip-adyta/cis-benchmarks-centos7-v3.1.2/main/Makefile && make fetch
 
-    make all
+    make run
 
 #### Run
 ```
