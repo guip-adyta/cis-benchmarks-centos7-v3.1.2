@@ -1,6 +1,6 @@
-.PHONY: fetch prune
+.PHONY: fetch all prune
 SELF=$(firstword $(MAKEFILE_LIST))
-TIMESTAMP=$(date +%s)
+TIMESTAMP=$(shell date +%s)
 OUTPUT=cis_$(TIMESTAMP).txt
 fetch:
 	@curl -LO https://raw.githubusercontent.com/guip-adyta/cis-benchmarks-centos7-v3.1.2/main/cis_audit.py && \
